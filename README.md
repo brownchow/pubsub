@@ -34,9 +34,15 @@ https://www.runoob.com/redis/redis-pub-sub.html
 
  
 
-Client 等价于 channel 
+**Client 等价于 channel** 
 
 感觉不需要维护 chan  ---> topicList 的 map，只要维护 topic --> chanLit的列表就可以了
+
+订阅一个 topic 会返回一个 chan对象，可以理解成给客户端的回执，客户端拿着这个回执从里面取出对应的消息
+
+![](./img/part1.png)
+
+
 
 
 
